@@ -26,8 +26,20 @@ Random rand = new Random();
     }
 Console.WriteLine(); 
 // проверяем 
-Console.Write("Массив до сортировки: ");
 for(int i = 0; i < array.Length; i++)
 {
     Console.Write($"{array[i]}  ");
 }
+Console.WriteLine();
+Console.Write("Массив после сортировки: ");
+// метод сортировка элементов со случайным количеством элементов до 3
+void SortArray(string[] array)
+{ 
+    int N = array.Length;
+    N = new Random().Next(1, 4);
+    for(int i = 0; i < N; i++ )
+    {
+         Console.Write($"{array[i]}  ");
+    }
+}
+SortArray(array);
